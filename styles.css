@@ -58,8 +58,6 @@ body {
 .user-menu {
   background: linear-gradient(90deg, var(--Light-Violet), var(--Light-Magenta));
   border-radius: 10% 10% 2% 2% / 32% 32% 9% 9%;
-  /* border-top-left-radius: 25px;
-  border-top-right-radius: 25px; */
   display: flex;
   color: var(--White);
   font-size: 0.75rem;
@@ -70,6 +68,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.user-avatar::before {
+  content: "";
+  border-style: solid;
+  border-color: var(--White);
+  border-width: 0 0 0.2em 0.2em;
+  display: inline-flex;
+  height: 0.35em;
+  width: 0.35em;
+  transform: rotate(54deg) skew(25deg);
+  border-radius: 0.15em;
 }
 
 .user-availability {
