@@ -2,8 +2,86 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Primary */
+
+  --PaleViolet: hsl(276, 100%, 81%);
+  --moderate-violet: hsl(276, 55%, 52%);
+  --desaturated-dark-violet: hsl(271, 15%, 43%);
+  --grayish-blue: hsl(206, 6%, 79%);
+  --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --dark-grayish-violet: hsl(270, 7%, 64%);
+
+  /* gradient */
+
+  --Light-Magenta: hsl(293, 100%, 63%);
+  --Light-Violet: hsl(264, 100%, 61%);
+
+  /* secondary */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grayish-Violet: hsl(270, 20%, 96%);
+  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+  --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+
 body {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   margin: 0;
+  background-color: var(--Light-Grayish-Violet);
+}
+
+.iphone-container {
+  border: 9px solid white;
+  border-radius: 14% 14% 14% 14% / 6% 6% 6% 6%;
+  width: 246.75px;
+  height: 539px;
+  margin: 4em auto;
+  position: relative;
+}
+
+.chat-container {
+  border-radius: 4em;
+  background-color: var(--Light-Grayish-Violet);
+}
+
+.notch {
+  width: 55%;
+  background-color: white;
+  height: 20px;
+  position: absolute;
+  left: 3.2em;
+  border-radius: 23% 23% 11% 11% / 0% 0% 62% 62%;
+}
+
+.user-menu {
+  background: linear-gradient(90deg, var(--Light-Violet), var(--Light-Magenta));
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  color: var(--White);
+  font-size: 0.75rem;
+  padding: 2em 0.5em 1.5em;
+}
+
+.user-avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-availability {
+  font-size: 0.5rem;
+  color: var(--PaleViolet);
+}
+
+.user-avatar img {
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+}
+
+.images img {
+  width: 15%;
 }
