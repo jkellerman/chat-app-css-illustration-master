@@ -28,7 +28,6 @@
   <body>
     <main>
       <div class="iphone-container">
-        <div class="chat-container">
         <div class="notch"></div>
         <div class="user-menu-container">
           <div class="user-menu">
@@ -46,10 +45,11 @@
             </div>
           </div>
         </div>
-          <div class="chat chat-left">
+        <div class="chat-container">
+          <div class="chat-bubble chat-left">
             That sounds great. I’d be happy with that.
           </div>
-          <div class="chat chat-left">
+          <div class="chat-bubble chat-left">
             Could you send over some pictures of your dog, please?
           </div>
           <div class="dog-images">
@@ -63,36 +63,36 @@
               <img src="images/dog-image-3.jpg" alt="dog-image" />
             </div>
           </div>
-          <div class="chat chat-right">
+          <div class="chat-bubble chat-right">
             Here are a few pictures. She’s a happy girl!
           </div>
-          <div class="chat chat-right">Can you make it?</div>
-          <div class="chat chat-left">
+          <div class="chat-bubble chat-right chat-right-last">
+            Can you make it?
+          </div>
+          <div class="chat-bubble chat-left">
             She looks so happy! The time we discussed works. How long shall I
             take her out for?
           </div>
-          <div class="chat chat-left chat-pricing">
-            <input type="radio" id="30-minute-walk" />
-            <label for="30-minute-walk">
-              30 minute walk
-              <span class="pricing">$29</span></label
-            >
-          </div>
-          <div class="chat chat-left chat-pricing">
-            <input type="radio" id="1-hour-walk" />
-            <label for="1-hour-walk">
-              1 hour walk
-              <span class="pricing">$49</span></label
-            >
-          </div>
-          </div>
-          <div class="chat-box">
-            <form>
-              <input type="text" value="Type a message..." />
-              <button class="btn">
-                <i class="fas fa-angle-right"></i>
-              </button>
-            </form>
+          <div class="chat-bubble chat-left chat-pricing">
+            <div class="pricing-container">
+              <div class="walk-length">30 minute walk</div>
+              <div class="pricing">$29</div>
+            </div>
+            </div>
+            <div class="chat-bubble chat-left chat-pricing">
+            <div class="pricing-container">
+              <div class="walk-length">1 hour walk</div>
+              <div class="pricing">$49</div>
+            </div>
+            </div>
+            <div class="chat-box">
+              <form>
+                <input type="text" value="Type a message..." />
+                <button class="btn">
+                  <i class="fas fa-angle-right"></i>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
