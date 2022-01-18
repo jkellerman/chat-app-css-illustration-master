@@ -57,8 +57,9 @@ body {
 
 .user-menu {
   background: linear-gradient(90deg, var(--Light-Violet), var(--Light-Magenta));
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-radius: 10% 10% 2% 2% / 32% 32% 9% 9%;
+  /* border-top-left-radius: 25px;
+  border-top-right-radius: 25px; */
   display: flex;
   color: var(--White);
   font-size: 0.75rem;
