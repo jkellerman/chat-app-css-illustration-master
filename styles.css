@@ -140,7 +140,7 @@ body {
 }
 
 .chat-left {
-  background-color: hsl(300, 21%, 91%);
+  background-color: hsl(286, 25%, 91%);
   color: var(--moderate-violet);
   border-bottom-left-radius: 4px;
 }
@@ -176,7 +176,6 @@ body {
   top: 1.4em;
   left: 1.4em;
   border-color: var(--Very-Light-Magenta);
-  /* margin-right: 2em; */
 }
 
 .pricing-container {
