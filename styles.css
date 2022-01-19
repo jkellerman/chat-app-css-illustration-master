@@ -31,6 +31,23 @@ body {
   margin: 0;
   background-color: var(--Light-Grayish-Violet);
   color: var(--White);
+  position: relative;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.background {
+  width: 344px;
+  height: 500px;
+  border-radius: 23% 23% 50% 50% / 0% 0% 52% 52%;
+  background: linear-gradient(45deg, var(--Light-Violet), var(--Light-Magenta));
+  position: absolute;
+  z-index: -1;
+  left: 1em;
 }
 
 .iphone-container {
@@ -40,11 +57,6 @@ body {
   height: 505px;
   margin: 4em auto;
   position: relative;
-}
-
-.chat-container {
-  border-radius: 4em;
-  background-color: var(--Light-Grayish-Violet);
 }
 
 .notch {
@@ -62,7 +74,6 @@ body {
   border-radius: 10% 10% 2% 2% / 32% 32% 9% 9%;
   font-size: 0.7rem;
   padding: 2em 0.5em 1.5em;
-  margin-bottom: 0.4em;
 }
 
 .user-menu {
@@ -127,9 +138,13 @@ body {
 }
 
 .chat-container {
+  background-color: var(--Light-Grayish-Violet);
   display: flex;
   flex-direction: column;
   padding: 0 0.5em;
+  transform: translateX(-0.04em);
+  width: 229.99px;
+  border-radius: 23% 23% 16% 16% / 0% 0% 6% 6%;
 }
 
 .chat-bubble {
@@ -202,6 +217,7 @@ body {
 
 .chat-box {
   margin-top: 1em;
+  margin-bottom: 1.1em;
 }
 
 form {
@@ -228,8 +244,6 @@ form {
   color: white;
   border: 3px solid var(--Very-Dark-Desaturated-Violet);
   outline: none;
-  height: 25px;
-  width: 24px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -253,8 +267,9 @@ form {
 }
 
 @media (min-width: 1024px) {
-  main {
+  .main-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 10em auto;
@@ -279,6 +294,10 @@ form {
   .paragraph-container h1,
   .paragraph {
     text-align: start;
-    /* width: 98%; */
+  }
+
+  .btn {
+    height: 25px;
+    width: 24px;
   }
 }
