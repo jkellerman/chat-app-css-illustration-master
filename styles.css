@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
 :root {
   /* Primary */
 
@@ -37,22 +43,8 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
-}
-
-.background {
-  width: 550px;
-  height: 1100px;
-  border-radius: 23% 23% 50% 50% / 0% 0% 28% 37%;
-  background: linear-gradient(
-    380deg,
-    var(--Light-Violet),
-    var(--Light-Magenta)
-  );
-  position: absolute;
-  z-index: -1;
-  left: -17.15em;
-  top: -30.5em;
 }
 
 .iphone-container {
@@ -271,7 +263,7 @@ form {
   margin-bottom: 4em;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1058px) {
   .main-container {
     display: flex;
     flex-direction: row;
@@ -283,6 +275,32 @@ form {
 
   body {
     height: 100vh;
+  }
+
+  .background-top {
+    width: 47.75%;
+    height: 175%;
+    border-radius: 23% 23% 50% 50% / 0% 0% 28% 37%;
+    background: linear-gradient(
+      380deg,
+      var(--Light-Violet),
+      var(--Light-Magenta)
+    );
+    position: absolute;
+    z-index: -1;
+    left: -17.15em;
+    top: -30.5em;
+  }
+
+  .background-bottom {
+    width: 22.55%;
+    height: 97%;
+    background-color: hsl(286, 30%, 92%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 91% 3% 50% 50% / 32% 0% 0% 0%;
   }
 
   .iphone-container {
