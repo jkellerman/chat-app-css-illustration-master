@@ -144,7 +144,7 @@ body {
   padding: 0 0.5em;
   transform: translateX(-0.04em);
   width: 229.99px;
-  border-radius: 23% 23% 16% 16% / 0% 0% 6% 6%;
+  border-radius: 23% 23% 10% 10% / 0% 0% 6% 6%;
 }
 
 .chat-bubble {
