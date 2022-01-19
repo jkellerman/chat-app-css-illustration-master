@@ -141,7 +141,7 @@ body {
 }
 
 .chat-left {
-  background-color: hsl(286, 25%, 91%);
+  background-color: hsl(286, 30%, 92%);
   color: var(--moderate-violet);
   border-bottom-left-radius: 4px;
 }
@@ -228,6 +228,8 @@ form {
   color: white;
   border: 3px solid var(--Very-Dark-Desaturated-Violet);
   outline: none;
+  height: 25px;
+  width: 24px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -248,4 +250,35 @@ form {
   color: var(--dark-grayish-violet);
   line-height: 2em;
   margin-bottom: 4em;
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10em auto;
+    width: 80%;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  .iphone-container {
+    margin-right: 5em;
+  }
+
+  .paragraph-container {
+    width: 39%;
+    margin-left: 3em;
+    margin-right: 7em;
+    transform: translateY(2em);
+  }
+
+  .paragraph-container h1,
+  .paragraph {
+    text-align: start;
+    /* width: 98%; */
+  }
 }
