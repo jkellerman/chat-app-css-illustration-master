@@ -37,7 +37,7 @@ body {
   border: 9px solid white;
   border-radius: 14% 14% 14% 14% / 6% 6% 6% 6%;
   width: 246.75px;
-  height: 539px;
+  height: 505px;
   margin: 4em auto;
   position: relative;
 }
@@ -61,6 +61,7 @@ body {
   border-radius: 10% 10% 2% 2% / 32% 32% 9% 9%;
   font-size: 0.7rem;
   padding: 2em 0.5em 1.5em;
+  margin-bottom: 0.4em;
 }
 
 .user-menu {
@@ -110,6 +111,20 @@ body {
   text-align: end;
 }
 
+.dog-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.images img {
+  width: 40px;
+  margin-left: 0.5em;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
 .chat-container {
   display: flex;
   flex-direction: column;
@@ -125,7 +140,7 @@ body {
 }
 
 .chat-left {
-  background-color: var(--dark-grayish-violet);
+  background-color: hsl(300, 21%, 91%);
   color: var(--moderate-violet);
   border-bottom-left-radius: 4px;
 }
@@ -185,16 +200,34 @@ body {
   padding-left: 2em;
 }
 
-.dog-images {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+.chat-box {
+  margin-top: 1em;
 }
 
-.images img {
-  width: 40px;
-  margin-left: 0.5em;
-  border-radius: 10px;
-  margin-top: 1em;
+form {
+  position: relative;
+}
+
+.placeholder {
+  height: 35px;
+  border-radius: 15em;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.6rem;
+  color: var(--grayish-blue);
+  padding-left: 2.5em;
+}
+
+.btn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background-color: var(--Very-Dark-Desaturated-Violet);
+  color: white;
+  border: 3px solid var(--Very-Dark-Desaturated-Violet);
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
