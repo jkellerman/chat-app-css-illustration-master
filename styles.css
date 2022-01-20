@@ -9,7 +9,7 @@
 } */
 
 :root {
-  /* Primary */
+  /* Text */
 
   --PaleViolet: hsl(276, 100%, 81%);
   --moderate-violet: hsl(276, 55%, 52%);
@@ -66,7 +66,7 @@ body {
   width: 52%;
   max-width: 290px;
   height: 55%;
-  background-color: hsl(286, 30%, 92%);
+  background-color: hsl(286, 30%, 94%);
   right: 0px;
   bottom: 0px;
   border-radius: 100% 0% 1% 0% / 60% 0% 0% 9%;
@@ -185,7 +185,7 @@ body {
 }
 
 .chat-left {
-  background-color: hsl(286, 30%, 92%);
+  background-color: hsl(286, 30%, 93%);
   color: var(--moderate-violet);
   border-bottom-left-radius: 4px;
 }
