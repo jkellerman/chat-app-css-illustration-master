@@ -354,14 +354,15 @@ form {
   body,
   main {
     height: 100vh;
+    margin: 4em auto;
   }
 
   .background-shape-top {
-    min-width: 705px;
+    min-width: 450px;
   }
 
   .background-shape-bottom {
-    bottom: -50px;
+    bottom: -100px;
   }
 
   .paragraph-container {
