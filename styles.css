@@ -34,7 +34,7 @@
   --chat-3-delay: calc(var(--image-3-delay) + 1s);
   --chat-4-delay: calc(var(--chat-3-delay) + 1.5s);
   --chat-5-delay: calc(var(--chat-4-delay) + 2.5s);
-  --pricing-delay: calc(var(--chat-5-delay) + 2.5s);
+  --pricing-delay: calc(var(--chat-5-delay) + 1s);
 }
 
 body {
@@ -203,6 +203,10 @@ body {
   border-radius: 10px;
   animation: appear 0.75s cubic-bezier(0.52, -0.07, 0.42, 0.83) 1 normal
     backwards;
+}
+
+.desktop-version {
+  display: none;
 }
 
 .chat-bubble:first-of-type {
@@ -385,6 +389,14 @@ form {
     right: 0;
     bottom: 0;
     border-radius: 91% 3% 50% 50% / 32% 0% 0% 0%;
+  }
+
+  .desktop-version {
+    display: inline-block;
+  }
+
+  .mobile-version {
+    display: none;
   }
 
   .iphone-container {
