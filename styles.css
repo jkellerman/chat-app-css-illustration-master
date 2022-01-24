@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-/* * {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-} */
-
 :root {
   /* Text */
 
@@ -29,6 +23,18 @@
   --Light-Grayish-Violet: hsl(270, 20%, 96%);
   --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
   --Very-Light-Magenta: hsl(289, 100%, 72%);
+
+  /* animations */
+
+  --chat-1-delay: 0.5s;
+  --chat-2-delay: calc(var(--chat-1-delay) + 1s);
+  --image-1-delay: calc(var(--chat-2-delay) + 2.5s);
+  --image-2-delay: calc(var(--image-1-delay) + 1s);
+  --image-3-delay: calc(var(--image-2-delay) + 1s);
+  --chat-3-delay: calc(var(--image-3-delay) + 1s);
+  --chat-4-delay: calc(var(--chat-3-delay) + 1.5s);
+  --chat-5-delay: calc(var(--chat-4-delay) + 2.5s);
+  --pricing-delay: calc(var(--chat-5-delay) + 2.5s);
 }
 
 body {
@@ -38,7 +44,6 @@ body {
   background-color: var(--Light-Grayish-Violet);
   color: var(--White);
   position: relative;
-  /* height: 100vh; */
 }
 
 .background-shape {
@@ -175,6 +180,19 @@ body {
   margin-left: 0.5em;
   border-radius: 10px;
   margin-top: 1em;
+  animation: zoom-in-out 1.5s ease-in-out 1 normal backwards;
+}
+
+.image-1 img {
+  animation-delay: var(--image-1-delay);
+}
+
+.image-2 img {
+  animation-delay: var(--image-2-delay);
+}
+
+.image-3 img {
+  animation-delay: var(--image-3-delay);
 }
 
 .chat-bubble {
@@ -183,6 +201,28 @@ body {
   padding: 1em 0.75em;
   margin-top: 1em;
   border-radius: 10px;
+  animation: appear 0.75s cubic-bezier(0.52, -0.07, 0.42, 0.83) 1 normal
+    backwards;
+}
+
+.chat-bubble:first-of-type {
+  animation-delay: var(--chat-1-delay);
+}
+
+.chat-bubble:nth-of-type(2) {
+  animation-delay: var(--chat-2-delay);
+}
+
+.chat-bubble:nth-of-type(4) {
+  animation-delay: var(--chat-3-delay);
+}
+
+.chat-bubble:nth-of-type(5) {
+  animation-delay: var(--chat-4-delay);
+}
+
+.chat-bubble:nth-of-type(6) {
+  animation-delay: var(--chat-5-delay);
 }
 
 .chat-left {
@@ -211,6 +251,8 @@ body {
   position: relative;
   justify-content: flex-start;
   padding-bottom: 1.25em;
+  animation: zoom-in-out-2 2s ease-in-out 1 normal backwards;
+  animation-delay: var(--pricing-delay);
 }
 
 .chat-pricing:before {
@@ -249,7 +291,6 @@ body {
 
 .chat-box {
   margin-top: 1em;
-  /* margin-bottom: ; */
 }
 
 form {
@@ -293,10 +334,6 @@ form {
   vertical-align: top;
   width: 0.4em;
   border-radius: 0.15em;
-
-  /* position: relative; */
-  /* top: 0.75em;
-  right: 2.4em; */
 }
 
 .paragraph-container {
@@ -384,5 +421,43 @@ form {
 
   .paragraph-container {
     margin-top: 4em;
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-in-out {
+  from {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-in-out-2 {
+  from {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
   }
 }
