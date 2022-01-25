@@ -473,11 +473,11 @@ body {
 
 @-moz-document url-prefix() {
   .iphone-container {
-    height: 503px;
+    height: 502px;
   }
 
   .chat-container {
-    height: 418.9px;
+    height: 417.9px;
     transform: translateX(-0.07em);
   }
 }
