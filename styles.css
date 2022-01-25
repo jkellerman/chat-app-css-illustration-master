@@ -470,3 +470,14 @@ body {
     transform: scale(1);
   }
 }
+
+@-moz-document url-prefix() {
+  .iphone-container {
+    height: 503px;
+  }
+
+  .chat-container {
+    height: 418.9px;
+    transform: translateX(-0.07em);
+  }
+}
